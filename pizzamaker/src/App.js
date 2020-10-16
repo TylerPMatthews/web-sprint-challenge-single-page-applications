@@ -4,6 +4,8 @@ import axios from "axios";
 import Form from "./Form";
 import schema from "./formSchema";
 import * as yup from "yup";
+import { Route, Link, Switch } from "react-router-dom";
+
 
 //Initial States
 const initialFormValues = {
@@ -96,18 +98,28 @@ function App() {
       setDisabled(!valid);
     });
   }, [formValues]);
+  
+  
   return (
     <div className="App">
       <header>
         <h1>Pizza Maker App</h1>
+        <nav>
+          <Link to='/'>Home</Link>
+          <Link to='/form'>Form</Link>
+        </nav>
       </header>
-      <Form
+      <switch>
+      <Route path='/form'>
+        <Form
         values={formValues}
         change={inputChange}
         submit={formSubmit}
         disabled={disabled}
         errors={formErrors}
       />
+      </Route>
+      </switch>
     </div>
   );
 }
