@@ -106,9 +106,12 @@ function App() {
         <h1>Pizza Maker App</h1>
         <nav>
           <Link to='/'>Home</Link>
-          <Link to='/form'>Form</Link>
+          <Link to='/form'>Make a pizza</Link>
         </nav>
       </header>
+   <div className='background'>
+
+   </div>
       <switch>
       <Route path='/form'>
         <Form

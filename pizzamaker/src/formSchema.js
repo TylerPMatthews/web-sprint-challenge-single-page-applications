@@ -10,5 +10,4 @@ export default yup.object().shape({
     .required("sauce is required"),
     special: yup
     .string()
-    .min(4, "Instructions must have 4 characters"),
 });

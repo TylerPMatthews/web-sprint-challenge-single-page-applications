@@ -11,3 +11,41 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+h1{
+font-size:5rem;
+}
+nav{
+  display:flex;
+  justify-content: space-evenly;
+  margin-top:5%;
+  
+  
+}
+nav a{
+  background-color:black;
+  color:white;
+  text-decoration: none;
+  padding:1.5% 2.5%;
+  border-radius:12px;
+  font-size:1rem;
+}
+
+h2{
+  font-size:3rem;
+  color:red;
+}
+form{
+  border:2px dotted black;
+  margin-top:10%;
+  margin-right:5%;
+  margin-left:5%;
+  background-color:black;
+  color:white;
+  padding-bottom:3%;
+}
+label{
+  margin-left:2%;
+  
+  
+
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import * as yup from "yup";
 
+
 export default function Form(props) {
   const { values, submit, change, disabled, errors } = props;
 
@@ -28,6 +29,7 @@ export default function Form(props) {
         <div>{errors.email}</div>
         <div>{errors.password}</div>
       </div>
+    
       <div className="form-div inputs">
         <label>
           Choice of size
