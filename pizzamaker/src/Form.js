@@ -52,6 +52,7 @@ export default function Form(props) {
             onChange={onChange}
             name="sauce"
             type="radio"
+            checked={values.sauce === 'originalred'}
           ></input>
         </label>
 
@@ -62,6 +63,7 @@ export default function Form(props) {
             onChange={onChange}
             name="sauce"
             type="radio"
+            checked={values.sauce === 'garlicranch'}
           ></input>
         </label>
 
@@ -72,6 +74,7 @@ export default function Form(props) {
             onChange={onChange}
             name="sauce"
             type="radio"
+            checked={values.sauce === 'bbqsauce'}
           ></input>
         </label>
 
@@ -82,6 +85,7 @@ export default function Form(props) {
             onChange={onChange}
             name="sauce"
             type="radio"
+            checked={values.sauce === 'spinachalfedo'}
           ></input>
         </label>
         </div>
